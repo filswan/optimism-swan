@@ -84,7 +84,17 @@ func TestBuildOptimism(t *testing.T) {
 		EAS: struct{ Name string }{
 			Name: "EAS",
 		},
-		Create2Deployer: struct{}{},
+		Create2Deployer:              struct{}{},
+		MultiCall3:                   struct{}{},
+		Safe_v130:                    struct{}{},
+		SafeL2:                       struct{}{},
+		MultiSendCallOnly:            struct{}{},
+		SafeSingletonFactory:         struct{}{},
+		DeterministicDeploymentProxy: struct{}{},
+		MultiSend:                    struct{}{},
+		Permit2:                      struct{}{},
+		SenderCreator:                struct{}{},
+		EntryPoint:                   struct{}{},
 	}
 
 	require.NoError(t, cfg.Check())
