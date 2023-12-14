@@ -69,10 +69,9 @@ contract L1StandardBridge is StandardBridge, ISemver {
         bytes extraData
     );
 
-    // TODO: should semver version be updated?
     /// @notice Semantic version.
-    /// @custom:semver 2.0.0
-    string public constant version = "2.0.0";
+    /// @custom:semver 2.1.0
+    string public constant version = "2.1.0";
 
     /// @notice Address of the SuperchainConfig contract.
     SuperchainConfig public superchainConfig;
