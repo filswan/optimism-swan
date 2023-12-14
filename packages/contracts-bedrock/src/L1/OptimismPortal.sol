@@ -98,10 +98,9 @@ contract OptimismPortal is Initializable, ResourceMetering, ISemver {
         _;
     }
 
-    // TODO: should semver version be updated?
     /// @notice Semantic version.
-    /// @custom:semver 2.1.0
-    string public constant version = "2.1.0";
+    /// @custom:semver 2.2.0
+    string public constant version = "2.2.0";
 
     /// @notice Constructs the OptimismPortal contract.
     constructor() {
@@ -113,9 +112,9 @@ contract OptimismPortal is Initializable, ResourceMetering, ISemver {
     }
 
     /// @notice Initializer.
-    /// @param _l2Oracle Address of the L2OutputOracle contract.
-    /// @param _systemConfig Address of the SystemConfig contract.
-    /// @param _superchainConfig Address of the SuperchainConfig contract.
+    /// @param _l2Oracle Contract of the L2OutputOracle.
+    /// @param _systemConfig Contract of the SystemConfig.
+    /// @param _superchainConfig Contract of the SuperchainConfig.
     function initialize(
         L2OutputOracle _l2Oracle,
         SystemConfig _systemConfig,
