@@ -792,7 +792,7 @@ contract Deploy is Deployer {
             _innerCallData: abi.encodeCall(
                 L1StandardBridge.initialize,
                 (
-                    L1CrossDomainMessenger(l1CrossDomainMessengerProxy),
+                    L1CrossDomainMessenger(payable(l1CrossDomainMessengerProxy)),
                     StandardBridge(payable(l2StandardBridge)),
                     SuperchainConfig(superchainConfigProxy)
                 )
