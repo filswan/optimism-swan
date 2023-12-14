@@ -178,7 +178,7 @@ contract Authorization_Test is CommonTest {
         _addSpec({ _name: "L1ERC721Bridge", _sel: _getSel("version()"), _auth: false, _pausable: false });
         _addSpec({ _name: "L1ERC721Bridge", _sel: _getSel("superchainConfig()"), _auth: false, _pausable: false });
         _addSpec({ _name: "L1ERC721Bridge", _sel: _getSel("paused()"), _auth: false, _pausable: false });
-        _addSpec({ _name: "L1ERC721Bridge", _sel: _getSel("initialize(address)"), _auth: false, _pausable: false });
+        _addSpec({ _name: "L1ERC721Bridge", _sel: _getSel("initialize(address,address,address)"), _auth: false, _pausable: false });
 
         // L1StandardBridge
         _addSpec({ _name: "L1StandardBridge", _sel: _getSel("MESSENGER()"), _auth: false, _pausable: false });
